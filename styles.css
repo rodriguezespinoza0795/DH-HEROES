@@ -1,0 +1,115 @@
+:root {
+    /*colores*/
+    --green: #1CD1B0;
+    --blue: #00669F;
+    --gray: #F3F3F3;
+}
+
+/* Reiniciar los estilos que el navegador trae por defecto */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+/*HEADER*/
+.header {
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.header__discounts {
+    padding: 10px 15px;
+    background-color: var(--green);
+}
+
+.header__title {
+    padding: 20px 15px;
+    background-color: var(--blue);
+}
+
+.header__title h1 {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+/*HEADER*/
+
+/*MAIN*/
+main {
+    padding: 80px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.card {
+    height: 500px;
+    max-width: 315px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.card__banner--batman {
+    background-image: url(./assets/img/banner_card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card__banner--harley {
+    background-image: url(./assets/img/banner_card_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card__image {
+    position: relative;
+    border-radius: 60px;
+    bottom: -100px;
+    left: 65px;
+}
+
+.card__icon {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+}
+
+.card__description {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--gray);
+}
+
+.card__description h3 {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.card__description button {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 120px;
+    align-self: center;
+}
+/*MAIN*/
+
+/*FOOTER*/
+footer {
+    color: white;
+    padding: 10px 15px;
+    background-color: var(--blue);
+}
+/*FOOTER*/
