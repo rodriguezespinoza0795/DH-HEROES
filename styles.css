@@ -1,6 +1,6 @@
 :root {
     /*colores*/
-    --green: #1CD1B0;
+    --discounts: #D1891C;
     --blue: #00669F;
     --gray: #F3F3F3;
 }
@@ -14,7 +14,10 @@
 }
 
 body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
     height: 100vh;
+
 }
 
 /*HEADER*/
@@ -23,7 +26,7 @@ body {
 }
 .header__discounts {
     padding: 10px 15px;
-    background-color: var(--green);
+    background-color: var(--discounts);
 }
 
 .header__title {
@@ -34,6 +37,7 @@ body {
 .header__title h1 {
     font-weight: 400;
     font-size: 2em;
+    color: white;
 }
 
 /*HEADER*/
@@ -44,7 +48,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     gap: 50px;
+    overflow: scroll;
 }
 
 .card {
@@ -56,37 +62,36 @@ main {
     border-radius: 15px;
 }
 
-.card__banner--batman {
-    background-image: url(./assets/img/banner_card.png);
+.card__banner {
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.card__banner--harley {
-    background-image: url(./assets/img/banner_card_2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 166px;
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
 }
 
 .card__image {
     position: relative;
     border-radius: 60px;
-    bottom: -100px;
+    bottom: 70px;
     left: 65px;
+    height: 120px;
 }
 
 .card__icon {
     position: relative;
-    bottom: 70px;
+    bottom: 240px;
     left: 20px;
 }
 
 .card__description {
-    display: flex;
-    flex-flow: column;
+    display: grid;
+    grid-template-rows: 100px 135px 1fr;
     justify-content: space-between;
     padding: 20px;
     background-color: var(--gray);
+    justify-items: center;
+    gap: 10px
 }
 
 .card__description h3 {
@@ -94,6 +99,14 @@ main {
     padding-top: 50px;
     font-weight: 400;
     font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.card__description p {
+    overflow: hidden;
 }
 
 .card__description button {
@@ -108,8 +121,42 @@ main {
 
 /*FOOTER*/
 footer {
+    display: flex;
+    justify-content: center;
     color: white;
     padding: 10px 15px;
     background-color: var(--blue);
+    align-items: center;
+}
+
+footer p {
+    max-width: 70%;
+    text-align: center;
+}
+
+footer img {
+    height: 15px;
+    position: absolute;
+    right: 15px;
 }
 /*FOOTER*/
+
+.Floating-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--blue);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 5px;
+    cursor: pointer;
+}
