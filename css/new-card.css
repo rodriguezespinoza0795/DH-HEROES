@@ -1,0 +1,95 @@
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.main--form {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    max-width: 700px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    height: 100%;
+}
+
+.form--title {
+    text-align: center;
+    color: white;
+    padding: 10px 40px;
+}
+
+.form--title h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.form--title p {
+    font-weight: 300;
+}
+
+.form--container {
+    display: grid;
+    color: white;
+    padding: 20px 40px;
+    gap: 10px;
+    grid-template-rows: 1fr min-content;
+}
+
+.input--group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.input--group fieldset {
+    display: grid;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .input--group {
+        grid-template-columns: 1fr;
+    }
+}
+
+.multiple--options {
+    display: grid;
+    margin: 20px 0px;
+}
+
+.form--section {
+    display: grid;
+    gap: 15px;
+    grid-template-rows: min-content min-content 1fr;
+    align-content: space-between;
+}
+
+.form--button {
+    background-color: var(--green);
+    border: none;
+    width: 200px;
+    border-radius: 15px;
+    justify-self: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#name, #type, #date, #description {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    resize: none
+}
+
+.form--input{
+    display: grid;
+    gap: 10px;
+}
+
+/* MAIN */

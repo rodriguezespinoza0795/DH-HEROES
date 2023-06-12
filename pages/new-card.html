@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/new-card.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__discounts">
+        <p>20% de descuento en todos los productos!</p>
+      </section>
+      <section class="header__title">
+        <a href="../index.html">
+          <img src="../assets/img/logo.svg" alt="logo" />
+        </a>
+        <h1>Nombre Tienda</h1>
+      </section>
+      <section class="header__nav">
+        <nav>
+          <ul>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Registrarme</a></li>
+            <li><a href="">Ingresar</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="main--form">
+        <section class="form--title">
+          <h1>Añadir tu súper</h1>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+        </section>
+        <form action="../index.html" class="form--container">
+          <section class="input--group">
+            <fieldset class="form--section">
+              <label for="name" class="form--input">
+                *Nombre
+                <input type="text" id="name" required />
+              </label>
+              <label for="date" class="form--input">
+                Fecha
+                <input type="date" id="date" />
+              </label>
+              <textarea
+                name="description"
+                cols="30"
+                rows="10"
+                placeholder="Descripción"
+                id="description"
+              ></textarea>
+            </fieldset>
+            <fieldset class="form--section">
+              <label for="type" class="form--input">
+                *Especie
+                <select name="type" id="type" required>
+                  <option value="" disabled selected>Especie</option>
+                </select>
+              </label>
+              <label for="photo" class="form--input">
+                Agregar Foto
+                <input type="file" id="photo" />
+              </label>
+              <fieldset>
+                <label class="multiple--options">
+                  Poderes
+                  <label for="fly">
+                    <input type="checkbox" name="powers" value="fly" id="fly" />
+                    Volar
+                  </label>
+                  <label for="superintelligence">
+                    <input
+                      type="checkbox"
+                      name="powers"
+                      value="superintelligence"
+                      id="superintelligence"
+                    />
+                    SuperInteligencia
+                  </label>
+                  <label for="laser_sight">
+                    <input
+                      type="checkbox"
+                      name="powers"
+                      value="laser_sight"
+                      id="laser_sight"
+                    />
+                    Vista de rayo láser
+                  </label>
+                  <label for="wallet">
+                    <input
+                      type="checkbox"
+                      name="powers"
+                      value="wallet"
+                      id="wallet"
+                    />
+                    Billetera gorda
+                  </label>
+                </label>
+                <label class="multiple--options">
+                  Tipo de personaje
+                  <label for="hero">
+                    <input type="radio" name="type" value="hero" id="hero" />
+                    Héroe / Heroina
+                  </label>
+                  <label for="villain">
+                    <input
+                      type="radio"
+                      name="type"
+                      value="villain"
+                      id="villain"
+                    />
+                    Villano / Villana
+                  </label>
+                </label>
+              </fieldset>
+            </fieldset>
+          </section>
+          <input type="submit" value="Añadir" class="form--button" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+      <a
+        href="https://github.com/rodriguezespinoza0795/DH-HEROES"
+        target="_blank"
+      >
+        <img src="../assets/icon/GitHub.png" alt="GitHub Logo" />
+      </a>
+    </footer>
+  </body>
+</html>
